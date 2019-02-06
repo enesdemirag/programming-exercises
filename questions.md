@@ -57,7 +57,7 @@ Below matrix is a 3x3 blur kernel. For each pixel in the image, we take 3x3 bloc
     </tr>
 </table>
 
-Write a function that can apply the entered kernel to an image. You can use image *[here](todo)*.
+Write a function that can apply the entered kernel to an image. You can use image *[here](materials/question3-image-processing)*.
 
 Example:
 ```
