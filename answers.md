@@ -1,4 +1,7 @@
 ### Answer 1
+
+We create a loop counting from 1 to infinite. Every loop we check if number divide without remainder and multiply the products until we reach to input value.
+
 ```python
 def inverse_fact(input):
     prod = 1
@@ -14,6 +17,11 @@ def inverse_fact(input):
 ```
 
 ### Answer 2
+
+We read every character one by one using for loop. Instead of using alphabet string I used Python's two build-in functions for shifting. ```ord()``` function converts character to its _[ascii code](https://theasciicode.com.ar)_ and the ```chr()``` function works vice-versa. Firstly we get the ascii number of the character, then add that shift value.
+
+However, English alphabet starts from a(97) and ends at z(122) or for capitalize alphabet it's A(65) to Z(90). In order to avoid other characters first we need to remove characters before 'a' and shift it. Secondly we prevent it to exceed 26 using modulo operator. Finally we add removed characters back and convert back from ascii to the char.
+
 ```python
 def encrypt(text, shift):
     cipher = ''
@@ -25,7 +33,9 @@ def encrypt(text, shift):
         else:
             cipher = cipher + chr((ord(char) + shift - 97) % 26 + 97)
     return cipher
+```
 
+```python
 def decrypt(text, shift):
     cipher = ''
     for char in text:
@@ -38,4 +48,34 @@ def decrypt(text, shift):
     return cipher
 ```
 
-### Answer 3
+Here is another way to write function using alphabet string.
+
+```python
+def encrypt(text, shift):
+    lower_case_alphabet = "abcdefghijklmnopqrstuvwxyz"
+    upper_case_alphabet = lower_case_alphabet.upper()
+    cipher = ''
+    for char in text:
+        if char == ' ':
+            cipher = cipher + char
+        elif char.isupper():
+            cipher = cipher + upper_case_alphabet[(upper_case_alphabet.index(char) + shift) % 26]
+        else:
+            cipher = cipher + lower_case_alphabet[(lower_case_alphabet.index(char) + shift) % 26]
+    return cipher
+```
+
+```python
+def encrypt(text, shift):
+    lower_case_alphabet = "abcdefghijklmnopqrstuvwxyz"
+    upper_case_alphabet = lower_case_alphabet.upper()
+    cipher = ''
+    for char in text:
+        if char == ' ':
+            cipher = cipher + char
+        elif char.isupper():
+            cipher = cipher + upper_case_alphabet[(upper_case_alphabet.index(char) - shift) % 26]
+        else:
+            cipher = cipher + lower_case_alphabet[(lower_case_alphabet.index(char) - shift) % 26]
+    return cipher
+```
