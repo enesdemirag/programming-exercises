@@ -8,12 +8,12 @@ However, English alphabet starts from a(97) and ends at z(122) or for capitalize
 def encrypt(text, shift):
     cipher = ''
     for char in text:
-        if char == ' ':
+        if char == ' ': # If it's space character add without any change
             cipher = cipher + char
         elif char.isupper():
-            cipher = cipher + chr((ord(char) + shift - 65) % 26 + 65)
+            cipher = cipher + chr((ord(char) + shift - 65) % 26 + 65) # 65 for 'A'
         else:
-            cipher = cipher + chr((ord(char) + shift - 97) % 26 + 97)
+            cipher = cipher + chr((ord(char) + shift - 97) % 26 + 97) # 97 for 'a'
     return cipher
 ```
 
@@ -22,11 +22,11 @@ def decrypt(text, shift):
     cipher = ''
     for char in text:
         if char == ' ':
-            cipher = cipher + char
+            cipher = cipher + char # If it's space character add without any change
         elif char.isupper():
-            cipher = cipher + chr((ord(char) - shift - 65) % 26 + 65)
+            cipher = cipher + chr((ord(char) - shift - 65) % 26 + 65) # 65 for 'A'
         else:
-            cipher = cipher + chr((ord(char) - shift - 97) % 26 + 97)
+            cipher = cipher + chr((ord(char) - shift - 97) % 26 + 97) # 97 for 'a'
     return cipher
 ```
 
@@ -37,14 +37,16 @@ Here is another way to write function using alphabet string.
 ```python
 def encrypt(text, shift):
     lower_case_alphabet = "abcdefghijklmnopqrstuvwxyz"
-    upper_case_alphabet = lower_case_alphabet.upper()
+    upper_case_alphabet = lower_case_alphabet.upper() # Capitalize
     cipher = ''
     for char in text:
         if char == ' ':
             cipher = cipher + char
         elif char.isupper():
+            # Find index of char in upper_case_alphabet and shift it.
             cipher = cipher + upper_case_alphabet[(upper_case_alphabet.index(char) + shift) % 26]
         else:
+            # Find index of char in lower_case_alphabet and shift it.
             cipher = cipher + lower_case_alphabet[(lower_case_alphabet.index(char) + shift) % 26]
     return cipher
 ```
@@ -58,8 +60,10 @@ def encrypt(text, shift):
         if char == ' ':
             cipher = cipher + char
         elif char.isupper():
+            # Find index of char in upper_case_alphabet and shift it.
             cipher = cipher + upper_case_alphabet[(upper_case_alphabet.index(char) - shift) % 26]
         else:
+            # Find index of char in lower_case_alphabet and shift it.
             cipher = cipher + lower_case_alphabet[(lower_case_alphabet.index(char) - shift) % 26]
     return cipher
 ```

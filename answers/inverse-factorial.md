@@ -7,7 +7,7 @@ def inverse_fact(input):
     prod = 1
     i = 1
     while True:
-        if input % i == 0:
+        if input % i == 0: # If divided without remainder
             prod *= i
             if prod == input:
                 return i
