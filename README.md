@@ -9,5 +9,5 @@
 - [Answer](answers/caesar-cipher.md)
 
 #### Image Kernels
-- [Question](questions/image-processing.md)
-- [Answer](answers/image-processing.md)
+- [Question](questions/image-kernels.md)
+- [Answer](answers/image-kernels.md)
