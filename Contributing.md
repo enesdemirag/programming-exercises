@@ -1,6 +1,14 @@
 ### Contributing
 
-I'm trying to make informative and entertaining questions about topics that I like. Interested in contributing to my repo? Here's the format.
+I'm trying to make informative and entertaining questions about topics that I like.
+
+Interested in contributing to my repo? Fork this repo and start preparing your question.
+
+After you prepared a question about an interesting topic, open a pull request. I'll try to merge as soon as possible.
+
+If you found any mistake or you have advice, feel free to open an issue.
+
+Here's the format. Please be careful to follow the format for nice and clean repo.
 
 ##### Structure
 
@@ -26,5 +34,7 @@ I'm trying to make informative and entertaining questions about topics that I li
 ##### README
 
 - Append your question and answer link with same format.
+
+
 
 > I'm using Python and C programming languages, if you want to use another please be careful to the format. You can ask me anything [from here](demirag16@itu.edu.tr).
