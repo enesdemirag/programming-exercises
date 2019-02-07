@@ -1,3 +1,13 @@
-### Python Questions and Answers about Interesting Topics
+### Programming Questions about Interesting Topics
 
-I'm trying to make informative and entertaining questions about topics that I like.
+##### Inverse Factorial
+- [Question](questions/inverse-factorial.md)
+- [Answer](answers/inverse-factorial.md)
+
+##### Caesar Cipher
+- [Question](questions/caesar-cipher.md)
+- [Answer](answers/caesar-cipher.md)
+
+##### Image Processing
+- [Question](questions/image-processing.md)
+- [Answer](answers/image-processing.md)
