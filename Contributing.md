@@ -1,4 +1,4 @@
-### Contributing
+## Contributing
 
 I'm trying to make informative and entertaining questions about topics that I like.
 
@@ -31,7 +31,7 @@ Here's the format. Please be careful to follow the format for nice and clean rep
 2. Describe how you write the code.
 3. Give code using **suitable** markdown format.
 
-##### README
+##### Readme
 
 - Append your question and answer link with same format.
 
