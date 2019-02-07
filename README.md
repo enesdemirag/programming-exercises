@@ -8,6 +8,6 @@
 - [Question](questions/caesar-cipher.md)
 - [Answer](answers/caesar-cipher.md)
 
-##### Image Processing
+##### Image Kernels
 - [Question](questions/image-processing.md)
 - [Answer](answers/image-processing.md)

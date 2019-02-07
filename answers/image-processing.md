@@ -1,3 +1,0 @@
-### Answer - Image Processing
-
-todo
