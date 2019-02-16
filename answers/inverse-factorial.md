@@ -15,3 +15,26 @@ def inverse_fact(input):
             return 0
         i += 1
 ```
+
+Here is a solution using MATLAB.
+
+```matlab
+function output = reverse_fact(input)
+% Inverse Factorial Function
+    prod = 1;
+    i = 1;
+    while(true)
+        if(mod(input, i) == 0) % If divided without remainder
+            prod = prod * i;
+            if(prod == input)
+                break; % Exit loop
+            end
+        else
+            i = 0;
+            break;
+        end
+        i = i + 1;
+    end
+    output = i;
+end
+```
