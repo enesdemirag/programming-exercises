@@ -2,6 +2,8 @@
 
 We create a loop counting from one to infinite. And in every loop we check that if number can be divided without remainder and multiply the products until we reach to input value.
 
+Here is a solution using Python.
+
 ```python
 def inverse_fact(input):
     prod = 1

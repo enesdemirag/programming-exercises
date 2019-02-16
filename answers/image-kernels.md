@@ -1,10 +1,10 @@
 ### Answer - Image Kernels
 
-Before coding, we need to import _[numpy](https://docs.scipy.org/doc/numpy/user/whatisnumpy.html)_ and _[matplotlib](https://matplotlib.org/)_ modules to our program. Numpy enables us to perform fast operations on matrices. Of course we can write our program without using numpy but it would be much harder. Matplotlib actually a plotting library for python but we need it just for showing our filtered image.
+I will use Python for this solution. Before coding, we need to import _[numpy](https://docs.scipy.org/doc/numpy/user/whatisnumpy.html)_ and _[matplotlib](https://matplotlib.org/)_ modules to our program. Numpy enables us to perform fast operations on matrices. Of course we can write our program without using numpy but it would be much harder. Matplotlib actually a plotting library for python but we need it just for showing our filtered image.
 
 The hardest part of this process on edges of the image. Because we need to apply 3x3 matrix multiplication to every pixel with its neighbors, for edge pixels this requires values from pixels outside of the image boundaries. There are a variety of methods for handling image edges such as mirroring or cropping. In this example, for simplicity we will add a 1 pixel black border while processing, then remove it.
 
-Firstly, we convert the type of input matrices from list of lists to n dimensional numpy arrays. Then we create 1 pixel larger matrix and fill the image values to that. After that, we grab every pixel with its neighbors and multiply with the values in kernel, then write the sum of the results to filtered matrix. And finally, we show the result image using matplotlib. 
+Firstly, we convert the type of input matrices from list of lists to n dimensional numpy arrays. Then we create 1 pixel larger matrix and fill the image values to that. After that, we grab every pixel with its neighbors and multiply with the values in kernel, then write the sum of the results to filtered matrix. And finally, we show the result image using matplotlib.
 
 ```python
 import numpy as np

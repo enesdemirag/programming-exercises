@@ -1,6 +1,8 @@
 ### Answer - Approximating Pi
 
-There are a couple different ways of estimating &#960;. I will use **[Monte Carlo Method](http://mathworld.wolfram.com/MonteCarloMethod.html)**. What if we randomly throw darts at a dart board that looks like this.
+There are a couple different ways of estimating &#960;. I will use **[Monte Carlo Method](http://mathworld.wolfram.com/MonteCarloMethod.html)** with C programming.
+
+What if we randomly throw darts at a dart board that looks like this.
 
 <img src="https://www.asc.ohio-state.edu/orban.14/math_coding/pi_graphical/circle_square2.png" width="300">
 

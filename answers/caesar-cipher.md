@@ -1,6 +1,6 @@
 ### Answer - Caesar Cipher
 
-We read every character one by one using for loop. Instead of using alphabet string I used Python's two build-in functions for shifting. ```ord()``` function converts character to its _[ascii code](https://theasciicode.com.ar)_ and the ```chr()``` function works vice-versa. Firstly we get the ascii number of the character, then add that shift value.
+We read every character one by one using for loop in Python. Instead of using alphabet string I used Python's two build-in functions for shifting. ```ord()``` function converts character to its _[ascii code](https://theasciicode.com.ar)_ and the ```chr()``` function works vice-versa. Firstly we get the ascii number of the character, then add that shift value.
 
 However, English alphabet starts from a(97) and ends at z(122) or for capitalize alphabet it's A(65) to Z(90). In order to avoid other ascii characters first we need to remove characters before 'a', then shift it. Be careful here, because after 'z' again starts different characters, so we can prevent it to exceed 26 using modulo operator. Finally we add removed characters back and convert back from ascii to the char.
 
