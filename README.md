@@ -11,3 +11,7 @@
 #### Image Kernels
 - [Question](questions/image-kernels.md)
 - [Answer](answers/image-kernels.md)
+
+#### Approximating Pi
+- [Question](questions/approximating-pi.md)
+- [Answer](answers/approximating-pi.md)
