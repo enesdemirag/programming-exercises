@@ -112,7 +112,11 @@ From the figure, it's clear that the length of the square **L** is twice the rad
 
 So if we randomly throw the darts, the ratio should approximate to &#960;/4. Therefore we can just multiply the ratio by 4 to get an estimate for &#960;.
 
-First, we need to include math.h library to our program. Then imagine a 500x500 square and a circle which perfectly fits inside of it. I will take the center of the circle as origin point **(0,0)**. To be more precise I want to use float values instead of integers. ```rand()``` function returns a random integer in the range of 0 to **RAND_MAX**. RAND_MAX is a constant whose default value may vary between computers. After generating 2 random float numbers between -500 and +500 as a (x,y) point in space we should calculate its distance from origin. If distance is smaller than radius of the circle (500), this means dart landed within the circle.
+First, we need to include math.h library to our program. Then imagine a 500x500 square and a circle which perfectly fits inside of it. I will take the center of the circle as origin point **(0,0)**.
+
+To be more precise I want to use float values instead of integers. ```rand()``` function returns a random integer in the range of 0 to **RAND_MAX**. RAND_MAX is a constant whose default value may vary between computers.
+
+After generating 2 random float numbers between -500 and +500 as a (x,y) point in space we should calculate its distance from origin. If distance is smaller than radius of the circle (500), this means dart landed within the circle.
 
 If we continue this process, 4 x ratio of darts inside the circle to total thrown darts will come out to &#960;.
 
