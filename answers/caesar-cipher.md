@@ -6,7 +6,7 @@ However, English alphabet starts from a(97) and ends at z(122) or for capitalize
 
 ```python
 def encrypt(text, shift):
-    cipher = ''
+    cipher = ""
     for char in text:
         if char == ' ': # If it's space character add without any change
             cipher = cipher + char
@@ -19,7 +19,7 @@ def encrypt(text, shift):
 
 ```python
 def decrypt(text, shift):
-    cipher = ''
+    cipher = ""
     for char in text:
         if char == ' ':
             cipher = cipher + char # If it's space character add without any change
@@ -38,7 +38,7 @@ Here is another way to write function using alphabet string.
 def encrypt(text, shift):
     lower_case_alphabet = "abcdefghijklmnopqrstuvwxyz"
     upper_case_alphabet = lower_case_alphabet.upper() # Capitalize
-    cipher = ''
+    cipher = ""
     for char in text:
         if char == ' ':
             cipher = cipher + char
@@ -55,7 +55,7 @@ def encrypt(text, shift):
 def encrypt(text, shift):
     lower_case_alphabet = "abcdefghijklmnopqrstuvwxyz"
     upper_case_alphabet = lower_case_alphabet.upper()
-    cipher = ''
+    cipher = ""
     for char in text:
         if char == ' ':
             cipher = cipher + char
