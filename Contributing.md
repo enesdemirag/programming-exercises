@@ -37,4 +37,4 @@ Here's the format. Please be careful to follow the format for nice and clean rep
 
 
 
-> I'm using Python and C programming languages, if you want to use another please be careful to the format. You can ask me anything [from here](demirag16@itu.edu.tr).
+> Instead of creating questions, you can contribute via publishing a different approach to a question or solution with different programming language. Feel free to use any programming language, but please be careful to the format. You can ask me anything [from here](demirag16@itu.edu.tr).
