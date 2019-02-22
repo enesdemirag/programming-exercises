@@ -23,3 +23,5 @@ output        : 10
 ```
 
 For more information check out _[this](http://mathworld.wolfram.com/FibonacciNumber.html)_ website and *[wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)* page.
+
+_Go to [answer](https://github.com/enesdemirag/programming-exercises/blob/master/answers/fibonacci-finder.md)._

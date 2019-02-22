@@ -40,3 +40,5 @@ function output = reverse_fact(input)
     output = i;
 end
 ```
+
+_Go to [question](https://github.com/enesdemirag/programming-exercises/blob/master/questions/inverse-factorial.md)._

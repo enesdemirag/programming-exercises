@@ -1,6 +1,6 @@
 ### Answer - Fibonacci Finder
 
-Here is a function which returns the index of the input number in fibonacci sequence. If input value is not a member of fibonacci sequence it gives -1. 
+Here is a function which returns the index of the input number in fibonacci sequence. If input value is not a member of fibonacci sequence it gives -1.
 
 ```matlab
 function output = fibonacci_finder(input)
@@ -24,3 +24,5 @@ function output = fibonacci_finder(input)
     end
     output = count; % Index in sequence
 end```
+
+_Go to [question](https://github.com/enesdemirag/programming-exercises/blob/master/questions/fibonacci-finder.md)._

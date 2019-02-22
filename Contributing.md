@@ -1,37 +1,31 @@
 ## Contributing
 
-I'm trying to make informative and entertaining questions about topics that I like.
+I'm trying to make informative and entertaining questions about topics that I like. Interested in contributing to my repo? Fork this repo and start preparing your question. After you prepared a question about an interesting topic, open a pull request. I'll try to merge as soon as possible. If you found any mistake or you have advice, feel free to open an issue. Here's the format. Please be careful to follow the format for nice and clean repo.
 
-Interested in contributing to my repo? Fork this repo and start preparing your question.
-
-After you prepared a question about an interesting topic, open a pull request. I'll try to merge as soon as possible.
-
-If you found any mistake or you have advice, feel free to open an issue.
-
-Here's the format. Please be careful to follow the format for nice and clean repo.
-
-##### Structure
+#### Structure
 
 - Questions must be under [here](questions), as topic-name.md format.
 - Answers must be under [here](answers), as topic-name.md format.
 - The name of the question and its answer **must** be same.
 - If you want to give some materials for question, you should put them under a directory which has the **same** name with your question. Then put that directory [here](questions/materials).
 
-##### Questions
+#### Questions
 
 1. At the first line, use ```### Question - Topic Name```.
 2. Give information about topic.
 3. Ask the question and show additional materials if available.
 4. Write example input and output.
 5. Give extra information, resources and links.
+6. Go to answer link.
 
-##### Answers
+#### Answers
 
 1. At the first line, use ```### Answer - Topic Name```.
 2. Describe how you write the code.
 3. Give code using **suitable** markdown format.
+4. Go to question link.
 
-##### Readme
+#### Readme
 
 - Append your question and answer link with same format.
 

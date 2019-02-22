@@ -10,3 +10,5 @@ Example:
 input         : 120
 output        : 5
 ```
+
+_Go to [answer](https://github.com/enesdemirag/programming-exercises/blob/master/answers/inverse-factorial.md)._

@@ -31,3 +31,5 @@ output  : (filtered image in a matrix form)
 ```
 
 If you want to learn more about image kernels, you can check *[wikipedia](https://bit.ly/2yfaapD)* page and _[this documentation](https://docs.gimp.org/en/gimp-filter-convolution-matrix.html)_ from gimp, also I certainly suggest you to look at _[this website](http://setosa.io/ev/image-kernels/)_ for visually explanation of image kernels.
+
+_Go to [answer](https://github.com/enesdemirag/programming-exercises/blob/master/answers/image-kernels.md)._

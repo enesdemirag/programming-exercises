@@ -41,3 +41,5 @@ def filter(image, kernel):
     plt.imshow(result, cmap="gray") # Show filtered image
     plt.show()
 ```
+
+_Go to [question](https://github.com/enesdemirag/programming-exercises/blob/master/questions/image-kernels.md)._

@@ -7,3 +7,5 @@ Interestingly, pi is an irrational number, there can be no “final" digit of pi
 Since computers can't work with infinite decimals, they need to approximate pi. There are countless number of numerical methods to calculate the value of pi.
 
 Write a program which approximates the value of &#960;
+
+_Go to [answer](https://github.com/enesdemirag/programming-exercises/blob/master/answers/approximating-pi.md)._
