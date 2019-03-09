@@ -22,3 +22,5 @@ plt.plot(x, line, "r-")
 plt.legend(["Estimated Line", "Data Points"])
 plt.show()
 ```
+
+_Go to [question](https://github.com/enesdemirag/programming-exercises/blob/master/questions/linear-regression.md)._

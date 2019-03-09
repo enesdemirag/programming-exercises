@@ -1,3 +1,0 @@
-### Question - Perlin Noise
-
-todo

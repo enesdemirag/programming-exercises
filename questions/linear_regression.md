@@ -1,3 +1,0 @@
-### Question - Linear Regression
-
-todo
