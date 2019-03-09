@@ -31,6 +31,7 @@ line = []
 for i in x:
     line.append(a * i + b)
 
+plt.xlim((0, n))
 plt.scatter(x, y)
 plt.plot(x, line, "r-")
 plt.legend(["Estimated Line", "Data Points"])
