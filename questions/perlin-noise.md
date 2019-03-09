@@ -10,11 +10,12 @@ If you want to learn how this algorithm works, please check out this [Khan Acade
 
 Write a program and show Simplex Noise in 1D
 
+_Go to [answer](https://github.com/enesdemirag/programming-exercises/blob/master/answers/perlin-noise.md)._
+
+
 For more information about this topic, you can look links below.
 - [Understanding Perlin Noise](http://flafla2.github.io/2014/08/09/perlinnoise.html)
 - [Improving Noise](https://mrl.nyu.edu/~perlin/paper445.pdf)
 - [Noise Hardware](https://www.csee.umbc.edu/~olano/s2002c36/ch02.pdf)
 - [Working with Simplex Noise](https://cmaher.github.io/posts/working-with-simplex-noise/)
 - [Simplex Noise Demystified](http://staffwww.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf)
-
-_Go to [answer](https://github.com/enesdemirag/programming-exercises/blob/master/answers/perlin-noise.md)._
