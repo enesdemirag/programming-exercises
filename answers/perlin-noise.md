@@ -2,10 +2,6 @@
 
 [Here](https://gist.github.com/eevee/26f547457522755cb1fb8739d0ea89a1) is a Python implementation of Perlin Noise. You can examine that but for simplicity I will use [OpenSimplex](https://pypi.org/project/opensimplex/) package. Using this package, we can generate 2D, 3D and 4D simplex noise in Python.
 
-Difference between random numbers and perlin noise shown below.
-
-<img src="https://web.itu.edu.tr/demirag16/img/random-vs-perlin.png" alt="Random Numbers vs. Perlin Noise" height="422" width="751" align="center"></img>
-
 Before starting, we import opensimplex module for noise values and matplotlib for plotting the result. First, we create a OpenSimplex object. Then using numpy's ```linspace()``` function, we generate our noise values. We will create 1D noise so we just need to get one of the values of 2D noise. ```noise2d()``` function returns values between -1 and 1. Finally, we plot x values and the data values respectively using matplotlib.
 
 ```python
