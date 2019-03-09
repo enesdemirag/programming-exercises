@@ -8,21 +8,13 @@ import matplotlib.pyplot as plt
 n = 50
 err = 10
 x = list(range(n))
-y = []
-
-for i in x:
-    y.append(i +random.random() * 2 * err - err)
+y = [i + random.random() * 2 * err - err for i in x]
 
 # Estimated Line
-x_mean = np.mean(x)
-y_mean = np.mean(y)
-
 a = (np.sum(x[i]*y[i] for i in range(n)) - (1 / n) * np.sum(x) * np.sum(y)) / (np.sum(i*i for i in x) - (1 / n) * (np.sum(x) ** 2))
-b = y_mean - a * x_mean
+b = np.mean(y) - a * np.mean(x)
 
-line = []
-for i in x:
-    line.append(a * i + b)
+line = [a * i + b for i in x]
 
 plt.xlim((0, n))
 plt.scatter(x, y)
