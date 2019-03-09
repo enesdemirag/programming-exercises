@@ -4,7 +4,7 @@
 
 Difference between random numbers and perlin noise shown below.
 <p align="center">
-  <img width="751" height="422" src="">
+  <img width="751" height="422" src="https://web.itu.edu.tr/demirag16/img/random-vs-perlin.png">
 </p>
 
 Ken Perlin developed this algorithm for Disney's computer animated sci-fi motion picture [Tron (1982)](https://www.imdb.com/title/tt0084827/). In 1997, he won an Academy Award for Technical Achievement from the Academy of Motion Picture Arts and Sciences for this contribution to CGI.
