@@ -3,9 +3,9 @@
 [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise) is a random sequence generator producing a more natural, harmonic succession of numbers than that of the standard ```random()``` function. It was developed by Ken Perlin in the 1980s and has been used in graphical applications to generate procedural textures, shapes, terrains, and other seemingly organic forms.
 
 Difference between random numbers and perlin noise shown below.
-<div style="text-align:center" markdown="1">
-<img src="https://web.itu.edu.tr/demirag16/img/random-vs-perlin.png" alt="Random Numbers vs. Perlin Noise" height="422" width="751" align="center"></img>
-</div>
+<p align="center">
+  <img width="751" height="422" src="https://web.itu.edu.tr/demirag16/img/random-vs-perlin.png">
+</p>
 
 Ken Perlin developed this algorithm for Disney's computer animated sci-fi motion picture [Tron (1982)](https://www.imdb.com/title/tt0084827/). In 1997, he won an Academy Award for Technical Achievement from the Academy of Motion Picture Arts and Sciences for this contribution to CGI.
 
