@@ -16,15 +16,8 @@ for i in x:
 # Estimated Line
 x_mean = np.mean(x)
 y_mean = np.mean(y)
-x_sum = np.sum(x)
-y_sum = np.sum(y)
-x2_sum = np.sum(i*i for i in x)
-y2_sum = np.sum(i*i for i in y)
-xy_sum = np.sum(x[i]*y[i] for i in range(n))
 
-num = xy_sum - (1 / n) * x_sum * y_sum
-dem = x2_sum - (1 / n) * (x_sum ** 2)
-a = num / dem
+a = (np.sum(x[i]*y[i] for i in range(n)) - (1 / n) * np.sum(x) * np.sum(y)) / (np.sum(i*i for i in x) - (1 / n) * (np.sum(x) ** 2))
 b = y_mean - a * x_mean
 
 line = []
