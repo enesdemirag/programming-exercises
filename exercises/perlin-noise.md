@@ -48,4 +48,35 @@ plt.plot(x, y, 'r')
 plt.show()
 ```
 
+---
+
+Write a program and show Simplex Noise in 3D
+
+We can generate terrains using simplex noise. For this application, I will use [mayavi](https://docs.enthought.com/mayavi/mayavi/) instead of matplotlib. Because 3D plotting in mayavi is much more efficient. In order to get smooth values, we must take small steps on the ```noise2d()``` function. Because of this, I simply divide 10. Also due to this function gives values between -1 and 1, I will map it between 0 and 10 via adding 1 and multiplying with 10.
+
+```python
+from opensimplex import OpenSimplex
+import numpy as np
+from mayavi import mlab
+
+def generate_terrain(n):
+    noise = OpenSimplex()
+    z = [[0 for x in range(n)] for y in range(n)]
+    for i in range(n):
+        for j in range(n):
+            z[i][j] = (noise.noise2d(((i + 1) / 10), ((j + 1) / 10)) + 1) * 10
+    return z
+
+z = generate_terrain(100)
+mlab.surf(z)
+mlab.show()
+```
+
+The result should be like this.
+
+<p align="center">
+  <img width="823" height="463" src="https://web.itu.edu.tr/demirag16/img/3d_terrain.png">
+</p>
+
+
 You can use higher dimensional noise functions to make organic looking visuals. [Here](https://necessarydisorder.wordpress.com/2017/11/15/drawing-from-noise-and-then-making-animated-loopy-gifs-from-there/) is and example of using perlin noise to make animated loop GIFs.
