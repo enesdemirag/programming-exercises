@@ -49,4 +49,5 @@ function output = fibonacci_finder(input)
         count = count + 1;
     end
     output = count; % Index in sequence
-end```
+end
+```
