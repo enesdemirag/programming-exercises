@@ -13,8 +13,6 @@ If you want to learn how this algorithm works, please check out this [Khan Acade
 
 [Simplex Noise](https://en.wikipedia.org/wiki/Simplex_noise) is an improvement on "classic" perlin noise by Ken Perlin himself. This algorithm has fewer directional artifacts and used in higher dimensions with lower computational overhead.
 
-Write a program and show Simplex Noise in 1D
-
 For more information about this topic, you can look links below.
 - [Understanding Perlin Noise](http://flafla2.github.io/2014/08/09/perlinnoise.html)
 - [Improving Noise](https://mrl.nyu.edu/~perlin/paper445.pdf)
@@ -23,6 +21,8 @@ For more information about this topic, you can look links below.
 - [Simplex Noise Demystified](http://staffwww.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf)
 
 ### Practical - Perlin Noise
+
+Write a program and show Simplex Noise in 1D
 
 [Here](https://gist.github.com/eevee/26f547457522755cb1fb8739d0ea89a1) is a Python implementation of Perlin Noise. You can examine that but for simplicity I will use [OpenSimplex](https://pypi.org/project/opensimplex/) package. Using this package, we can generate 2D, 3D and 4D simplex noise in Python.
 

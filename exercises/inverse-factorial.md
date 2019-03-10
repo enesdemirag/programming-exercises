@@ -2,6 +2,8 @@
 
 In mathematics, the **factorial** of a integer n, denoted by n!, is the product of all positive integers less than or equal to n.
 
+### Practical - Inverse Factorial
+
 Write a function that returns a number if its factorial is given.
 If the input value does not have a solution, return 0.
 
@@ -10,8 +12,6 @@ Example:
 input         : 120
 output        : 5
 ```
-
-### Practical - Inverse Factorial
 
 We create a loop counting from one to infinite. And in every loop we check that if number can be divided without remainder and multiply the products until we reach to input value.
 

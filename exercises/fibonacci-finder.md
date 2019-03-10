@@ -14,6 +14,10 @@ fibonacci(n):
         return(fibonacci(n-1) + fibonacci(n-2))
 ```
 
+For more information check out _[this](http://mathworld.wolfram.com/FibonacciNumber.html)_ website and *[wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)* page.
+
+### Practical - Fibonacci Finder
+
 Write a function that determines a number if its Fibonacci is given.
 
 Example:
@@ -21,10 +25,6 @@ Example:
 input         : 89
 output        : 10
 ```
-
-For more information check out _[this](http://mathworld.wolfram.com/FibonacciNumber.html)_ website and *[wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)* page.
-
-### Practical - Fibonacci Finder
 
 Here is a function which returns the index of the input number in fibonacci sequence. If input value is not a member of fibonacci sequence it gives -1.
 
