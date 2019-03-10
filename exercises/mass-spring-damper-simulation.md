@@ -1,8 +1,8 @@
-### Question - Mass Spring Damper Simulation
+### Theoretical - Mass Spring Damper Simulation
 
 todo
 
-### Answer - Mass Spring Damper Simulation
+### Practical - Mass Spring Damper Simulation
 
 ```python
 import numpy as np

@@ -1,4 +1,4 @@
-### Question - Fibonacci Finder
+### Theoretical - Fibonacci Finder
 
 The Fibonacci sequence is one of the most famous formulas in mathematics. Each number in the sequence is the sum of the two numbers that precede it. So, the sequence goes: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and so on.
 
@@ -24,7 +24,7 @@ output        : 10
 
 For more information check out _[this](http://mathworld.wolfram.com/FibonacciNumber.html)_ website and *[wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)* page.
 
-### Answer - Fibonacci Finder
+### Practical - Fibonacci Finder
 
 Here is a function which returns the index of the input number in fibonacci sequence. If input value is not a member of fibonacci sequence it gives -1.
 

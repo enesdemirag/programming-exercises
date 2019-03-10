@@ -1,4 +1,4 @@
-### Question - Caesar Cipher
+### Theoretical - Caesar Cipher
 
 **Caesar Cipher** is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the text is replaced by a letter some fixed number of positions down the alphabet.
 
@@ -19,7 +19,7 @@ output        : "Congratulations"
 
 You can watch this _[Khan Academy Video](https://www.khanacademy.org/computing/computer-science/cryptography/crypt/v/caesar-cipher)_ and read this _[article](http://www.cs.trincoll.edu/~crypto/historical/caesar.html)_ for more information.
 
-### Answer - Caesar Cipher
+### Practical - Caesar Cipher
 
 We read every character one by one using for loop in Python. Instead of using alphabet string I used Python's two build-in functions for shifting. ```ord()``` function converts character to its _[ascii code](https://theasciicode.com.ar)_ and the ```chr()``` function works vice-versa. Firstly we get the ascii number of the character, then add that shift value.
 

@@ -1,4 +1,4 @@
-### Question - Inverse Factorial
+### Theoretical - Inverse Factorial
 
 In mathematics, the **factorial** of a integer n, denoted by n!, is the product of all positive integers less than or equal to n.
 
@@ -11,7 +11,7 @@ input         : 120
 output        : 5
 ```
 
-### Answer - Inverse Factorial
+### Practical - Inverse Factorial
 
 We create a loop counting from one to infinite. And in every loop we check that if number can be divided without remainder and multiply the products until we reach to input value.
 

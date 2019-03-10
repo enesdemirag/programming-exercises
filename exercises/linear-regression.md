@@ -1,8 +1,8 @@
-### Question - Linear Regression
+### Theoretical - Linear Regression
 
 todo
 
-### Answer - Linear Regression
+### Practical - Linear Regression
 
 ```python
 import random
