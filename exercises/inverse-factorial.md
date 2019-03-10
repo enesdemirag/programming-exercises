@@ -1,3 +1,16 @@
+### Question - Inverse Factorial
+
+In mathematics, the **factorial** of a integer n, denoted by n!, is the product of all positive integers less than or equal to n.
+
+Write a function that returns a number if its factorial is given.
+If the input value does not have a solution, return 0.
+
+Example:
+```
+input         : 120
+output        : 5
+```
+
 ### Answer - Inverse Factorial
 
 We create a loop counting from one to infinite. And in every loop we check that if number can be divided without remainder and multiply the products until we reach to input value.
@@ -40,5 +53,3 @@ function output = reverse_fact(input)
     output = i;
 end
 ```
-
-_Go to [question](https://github.com/enesdemirag/programming-exercises/blob/master/questions/inverse-factorial.md)._

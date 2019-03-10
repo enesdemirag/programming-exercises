@@ -1,3 +1,37 @@
+### Question - Image Kernels
+
+An **image kernel** is a small matrix used to apply effects such as blurring, sharpening, and edge detection. They are like ancestors of modern image processing techniques and even used today in machine learning for _feature extraction_, a technique for determining the most important portions of an image.
+
+Below matrix is a 3x3 Gaussian Blur Kernel. For each pixel in the image, we take 3x3 block of neighbor pixels and multiply each pixel by the corresponding entry of the kernel and then take the sum. That sum becomes a new value of the pixel.
+
+<table align = center>
+    <tr>
+        <td align = center>0.0625</td>
+        <td align = center>0.125</td>
+        <td align = center>0.0625</td>
+    </tr>
+    <tr>
+        <td align = center>0.125</td>
+        <td align = center>0.25</td>
+        <td align = center>0.125</td>
+    </tr>
+    <tr>
+        <td align = center>0.0625</td>
+        <td align = center>0.125</td>
+        <td align = center>0.0625</td>
+    </tr>
+</table>
+
+Write a function that can apply the entered kernel to an image. You can use image *[here](materials/image-processing)*.
+
+Example:
+```
+input   : (image in a matrix form), [[0, -1, 0], [-1, 5, -1], [0, -1, 0]]
+output  : (filtered image in a matrix form)
+```
+
+If you want to learn more about image kernels, you can check *[wikipedia](https://bit.ly/2yfaapD)* page and _[this documentation](https://docs.gimp.org/en/gimp-filter-convolution-matrix.html)_ from gimp, also I certainly suggest you to look at _[this website](http://setosa.io/ev/image-kernels/)_ for visually explanation of image kernels.
+
 ### Answer - Image Kernels
 
 I will use Python for this solution. Before coding, we need to import _[numpy](https://docs.scipy.org/doc/numpy/user/whatisnumpy.html)_ and _[matplotlib](https://matplotlib.org/)_ modules to our program. Numpy enables us to perform fast operations on matrices. Of course we can write our program without using numpy but it would be much harder. Matplotlib actually a plotting library for python but we need it just for showing our filtered image.
@@ -41,5 +75,3 @@ def filter(image, kernel):
     plt.imshow(result, cmap="gray") # Show filtered image
     plt.show()
 ```
-
-_Go to [question](https://github.com/enesdemirag/programming-exercises/blob/master/questions/image-kernels.md)._

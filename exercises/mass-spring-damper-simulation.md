@@ -1,3 +1,7 @@
+### Question - Mass Spring Damper Simulation
+
+todo
+
 ### Answer - Mass Spring Damper Simulation
 
 ```python
@@ -28,5 +32,3 @@ def set(time):
 # Create Simulation
 Visualizer(callback=set, interval=dt * 1000.0, simulation_time=20.0, initial=(position, 0, velocity, 0, acceleration, 0))
 ```
-
-_Go to [question](https://github.com/enesdemirag/programming-exercises/blob/master/questions/mass-spring-damper-simulation.md)._

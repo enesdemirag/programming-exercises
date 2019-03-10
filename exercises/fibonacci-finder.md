@@ -24,4 +24,29 @@ output        : 10
 
 For more information check out _[this](http://mathworld.wolfram.com/FibonacciNumber.html)_ website and *[wikipedia](https://en.wikipedia.org/wiki/Fibonacci_number)* page.
 
-_Go to [answer](https://github.com/enesdemirag/programming-exercises/blob/master/answers/fibonacci-finder.md)._
+### Answer - Fibonacci Finder
+
+Here is a function which returns the index of the input number in fibonacci sequence. If input value is not a member of fibonacci sequence it gives -1.
+
+```matlab
+function output = fibonacci_finder(input)
+% Fibonacci Finder: Program that determines a number if its Fibonacci is given.
+    a = 0;
+    b = 1;
+    temp = 0;
+    count = 0;
+    while(true)
+        temp = a;
+        a = b;
+        b = temp + b;
+        if(a == input) % If
+            break;
+        end
+        else if(a > input) % If input number didn't within the sequence
+            count = -1; % Return -1
+            break;
+        end
+        count = count + 1;
+    end
+    output = count; % Index in sequence
+end```
