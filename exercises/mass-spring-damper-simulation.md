@@ -49,17 +49,17 @@ from visualizer import Visualizer # Import Visualizer class
 dt = 0.05 # ΔT (sampling period) seconds
 
 # Initial values
-position = 20.0
-velocity = 0.0
-acceleration = 0.0
+position = 15
+velocity = 0
+acceleration = 0
 
 # Constants
-mass = 1.0 # mass
+mass = 1 # mass
 k = 2.5 # spring coefficient
 b = 0.3 # damping coefficient
 
 # Callback Function
-def set(time):
+def set(arg):
     global dt, position, velocity, acceleration, mass, k, b # Get global variables
 
     spring_force = k * position # Fs = k * x
