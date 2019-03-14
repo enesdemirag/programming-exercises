@@ -83,7 +83,7 @@ class Visualizer(object):
         self.sim_time_label.set_text("Simulation Time: " + str(self.sim_time))
 
         # Get object xy from callback
-        (x, y), _ = self.cb_func(self.sim_time)
+        (x, y) = self.cb_func(self.sim_time)
         # Set the position of object
         vx = (x - self.x) / (self.interval / 1000.0)
         vy = (y - self.y) / (self.interval / 1000.0)
