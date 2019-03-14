@@ -32,13 +32,15 @@ For simplicity, we will use pre-written Python visualizer code *[here](materials
 
 Visualizer object takes a **callback function** which is basically returns new 2D position value each time it is called, a **time interval** which represents sampling period for this continuous system in milliseconds, **simulation_time** for plotting range, and **initial position** of the mass in 2D cartesian coordinate system. Although this Visualizer prepared for plotting 2D simulations, our system will move in only 1D, so we'll change x values only and make y values constant.
 
-All we need to do is implementing **Force = mass * acceleration + b * velocity + k * position** equation. In this system lets assume external force is zero and initial position is 20.
+All we need to do is implementing **Force = mass * acceleration + b * velocity + k * position** equation. In this system lets assume external force is zero and initial position is 15.
 
 <p align="center">
   <img src="https://cdn.kastatic.org/ka-perseus-images/6a38c2127e4ea04fadf58c016b81d19a4a46d5c0.gif">
 </p>
 
 Also we know that in order to compute position we need to take integral of acceleration two times. Because computers can't calculate real integral, we should use [limit definition of the integral](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/a/definite-integral-as-the-limit-of-a-riemann-sum) to approximate an integral like above.
+
+Mass will will move from initial point (x = 15) to the center (x = 0) and oscillate. It will lose its energy in time and stop at the center after a while.
 
 
 ```python
@@ -80,3 +82,5 @@ The result should be like this.
 <p align="center">
   <img src="https://web.itu.edu.tr/demirag16/img/msd-simulation.png">
 </p>
+
+_Thanks to **[@serceryazici](https://github.com/senceryazici)** for his *[Visualizer](materials/mass-spring-damper-simulation/visualizer.py)* module._
