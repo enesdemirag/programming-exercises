@@ -28,37 +28,55 @@ For more information, you can check [this website](http://www.sharetechnote.com/
 
 Create a physics simulation of a Mass-Spring-Damper System and plot the displacement, velocity and acceleration changes.
 
+For simplicity, we will use pre-written Python visualizer code *[here](materials/mass-spring-damper-simulation)*. It uses _[matplotlib](https://matplotlib.org/)_ package to plot In order to simulate displacement, velocity and acceleration quantities. In order to this first we need to save visualizer.py file and import that to our python code.
+
+Visualizer object takes a **callback function** which is basically returns new 2D position value each time it is called, a **time interval** which represents sampling period for this continuous system in milliseconds, **simulation_time** for plotting range, and **initial position** of the mass in 2D cartesian coordinate system. Although this Visualizer prepared for plotting 2D simulations, our system will move in only 1D, so we'll change x values only and make y values constant.
+
+All we need to do is implementing **Force = mass * acceleration + b * velocity + k * position** equation. In this system lets assume external force is zero and initial position is 20.
+
+<p align="center">
+  <img src="https://cdn.kastatic.org/ka-perseus-images/6a38c2127e4ea04fadf58c016b81d19a4a46d5c0.gif">
+</p>
+
+Also we know that in order to compute position we need to take integral of acceleration two times. Because computers can't calculate real integral, we should use [limit definition of the integral](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/a/definite-integral-as-the-limit-of-a-riemann-sum) to approximate an integral like above.
 
 
 ```python
-import numpy as np
-from visualizer import Visualizer
+from visualizer import Visualizer # Import Visualizer class
 
-dt = 0.05
+dt = 0.05 # ΔT (sampling period) seconds
+
+# Initial values
 position = 20.0
 velocity = 0.0
 acceleration = 0.0
-mass = 1.0
-k = 2.5
-b = 0.3
 
-# Callback function
+# Constants
+mass = 1.0 # mass
+k = 2.5 # spring coefficient
+b = 0.3 # damping coefficient
+
+# Callback Function
 def set(time):
-    global dt, position, velocity, acceleration, mass, k, b
+    global dt, position, velocity, acceleration, mass, k, b # Get global variables
 
-    spring_force = (k * position)
-    damper_force = b * velocity
+    spring_force = k * position # Fs = k * x
+    damper_force = b * velocity # Fb = b * x'
 
-    acceleration = - spring_force / mass - damper_force / mass
-    velocity += (acceleration * dt)
-    position += (velocity * dt)
+    # If we leave the acceleration alone in equation
+    # acceleration = - ((b * velocity) + (k * position)) / mass
+    acceleration = - (spring_force + damper_force) / mass
+    velocity += (acceleration * dt) # Integral(a) = v
+    position += (velocity * dt) # Integral(v) = x
 
-    return (position, 0), 0
+    return (position, 0) # Return position
 
-# Create Simulation
-Visualizer(callback=set, interval=dt * 1000.0, simulation_time=20.0, initial=(position, 0, velocity, 0, acceleration, 0))
+# Start simulation
+Visualizer(callback=set, interval=dt * 1000, simulation_time=30, initial=(position, 0, velocity, 0, acceleration, 0))
 ```
 
+The result should be like this.
+
 <p align="center">
-  <img src="https://uk.mathworks.com/help/examples/simscape_product/win64/ssc_mass_spring_damper_sl_02.png">
+  <img src="https://web.itu.edu.tr/demirag16/img/msd-simulation.png">
 </p>
