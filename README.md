@@ -16,3 +16,5 @@
 - [Mass Spring Damper Simulation](exercises/mass-spring-damper-simulation.md)
 
 - [Linear Regression](exercises/linear-regression.md)
+
+- [Markov Chains](exercises/markov-chains.md)
