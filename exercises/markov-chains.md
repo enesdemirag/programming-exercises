@@ -21,4 +21,4 @@ Besides each state can be a single word or character, also there is a concept kn
 
 ### Practical - Markov Chains
 
-todo
+Write a program which generates text using n-grams from input text.   
