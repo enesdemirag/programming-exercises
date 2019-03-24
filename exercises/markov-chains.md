@@ -43,19 +43,22 @@ def findIndex(word, indexNum): # Find the index of word in source text
 	indexes =  [i for i, e in enumerate(text) if e == word] # Indexes of all occurence
 	return indexes[indexNum]
 
-def main(n, text, initialWordIndex):
+def learn(text):
 	addWords(text)
-	currentWord = text[initialWordIndex] # First word
 	for word in text:
 		if text.index(word) == (len(text) - 1): # Don't check last word
 			break
 		indexNum = len(wordsDict[word]) # Next words of previous occurrence
 		addToPossibilities(word, text[findIndex(word, indexNum) + 1])
 
-	for i in range(n): # print next n words
-		print(currentWord, end = " ")
-		nextWord = random.choice(wordsDict[currentWord]) # Select random word next word from list
-		currentWord = nextWord
+def run(n, initialWordIndex):
+    currentWord = text[initialWordIndex] # First word
+    for i in range(n): # print next n words
+        print(currentWord, end = " ")
+        nextWord = random.choice(wordsDict[currentWord]) # Select random word next word from list
+        currentWord = nextWord
 
-main(100, text, 0) # run
+# Generate text with 100 words
+learn(text)
+run(100, 0)
 ```
