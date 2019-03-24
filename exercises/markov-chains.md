@@ -27,12 +27,12 @@ Write a program which generates text using n-grams from input text.
 import random
 
 text = open("file.txt").read().split() # Read Source Text
-wordsDict = dict() 
+wordsDict = dict()
 
 def addWords(text): # Add every different word to the dictionary
-  for word in text:
-		if text.index(word) == (len(text) - 1):
-			break
+    for word in text:
+        if text.index(word) == (len(text) - 1):
+            break
 		if not word in wordsDict:
 			wordsDict[word] = list()
 
@@ -47,9 +47,9 @@ def main(n, text, initialWordIndex):
 	addWords(text)
 	currentWord = text[initialWordIndex] # First word
 	for word in text:
-		if text.index(word) == (len(text) - 1): # Don't check last word 
+		if text.index(word) == (len(text) - 1): # Don't check last word
 			break
-		indexNum = len(wordsDict[word]) # Next words of previous occurrence 
+		indexNum = len(wordsDict[word]) # Next words of previous occurrence
 		addToPossibilities(word, text[findIndex(word, indexNum) + 1])
 
 	for i in range(n): # print next n words
