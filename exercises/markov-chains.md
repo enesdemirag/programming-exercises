@@ -23,6 +23,10 @@ Besides each state can be a single word or character, also there is a concept kn
 
 Write a program which generates text using n-grams from input text.
 
+In order to generate text, first we need to create a state space for given source text. ```addWords()``` function will add every different word to a dictionary as a key, and assign an empty list as value. Then we will add every word to the previous word's associated list. **(Createing bi-grams)** After that, we should have a list of next possible words for each word in source text. Same word can be found more than one in list. This means the probability of that word is higher.
+
+Finally, we will specify the initial word for text to start generating. And program will automatically start to generate a sequence of words _(randomly selecting a word from the previous word's corresponding list)_ via for loop. 
+
 ```python
 import random
 
