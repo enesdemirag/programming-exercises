@@ -18,3 +18,5 @@
 - [Linear Regression](exercises/linear-regression.md)
 
 - [Markov Chains](exercises/markov-chains.md)
+
+- [Fuzzy Search](exercises/fuzzy-search.md)
