@@ -35,7 +35,7 @@ y = [i + random.random() * 2 * err - err for i in x]
 # Simple Linear Regression
 def simple_regression(x, y):
     m = (np.sum(x[i]*y[i] for i in range(n)) - (1 / n) * np.sum(x) * np.sum(y)) / (np.sum(i*i for i in x) - (1 / n) * (np.sum(x) ** 2))
-    c = np.mean(y) - a * np.mean(x)
+    c = np.mean(y) - m * np.mean(x)
     line = [m * i + c for i in x]
     return line
 
