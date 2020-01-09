@@ -14,8 +14,9 @@ There are a couple different ways of estimating &#960;. I will use **[Monte Carl
 
 What if we randomly throw darts at a dart board that looks like this.
 
+<p align="center">
 <img src="https://www.asc.ohio-state.edu/orban.14/math_coding/pi_graphical/circle_square2.png" width="300">
-
+</p>
 If we count up the darts that landed within the circle and compare to the total number of darts thrown, the ratio should approximate to the area of the circle divided by the area of the square.
 
 From the figure, it's clear that the length of the square **L** is twice the radius of the circle **r**. So we can calculate the ratio between the areas of circle and square as following.
@@ -184,8 +185,8 @@ def distance(x, y):
 ```
 
 Simulation:
-
+<p align="center">
 <img src="images/monte-carlo.gif">
-
+</p>
 
 [Here](https://editor.p5js.org/ChrisOrban/sketches/ByERjxMKG) is a great visual explanation of what we tried to do using Javascript. Also in [this video](https://thecodingtrain.com/CodingChallenges/095-approximating-pi.html) Processing (Java) used.

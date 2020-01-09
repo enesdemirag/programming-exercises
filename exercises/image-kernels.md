@@ -78,4 +78,4 @@ def filter(image, kernel):
 
 **Result:**
 
-<img align = center src="images/image-kernels.png">
+<p align="center"><img src="images/image-kernels.png"></p>

@@ -26,7 +26,7 @@ print(intersect)
 
 - Classical Formula
 
-<div style="text-align:center"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c51a9b486a6ef5a7a08b92d75e71a07888034a9a" width=300></div>
+<p align="center"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c51a9b486a6ef5a7a08b92d75e71a07888034a9a" width=300></p>
 
 ```python
 class Point(object):
