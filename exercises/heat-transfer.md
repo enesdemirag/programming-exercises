@@ -8,7 +8,39 @@ Ideally, given heat from one matter is equal to received heat from other. Using 
 
 One way to find the final temperature value we can use below formula.
 
-<table style="border-collapse:collapse;border-spacing:0;border:none;margin:0px auto" class="tg"><tr><td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"></td><td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"></td><td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">m1.c1.t1 + m2.c2.t2</td></tr><tr><td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Final Temperature</td><td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">=</td><td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">-------------------------</td></tr><tr><td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"></td><td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"></td><td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">m1.c1 + m2.c2</td></tr></table>
+<table style="width: 393px;" border="0" cellspacing="0" align="center">
+<tbody>
+<tr>
+<td style="width: 57px;" align="center" nowrap="nowrap">Final Temperature</td>
+<td style="width: 16px;" align="center" nowrap="nowrap">=</td>
+<td style="width: 139px;" align="center" nowrap="nowrap">
+<table border="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center" nowrap="nowrap">
+<div>
+<div>m1.c1.t1 + m2.c2.t2</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="hrcomp"><hr noshade="noshade" size="1" /></div>
+<table border="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center" nowrap="nowrap">
+<div>
+<div>m1.c1 + m2.c2</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 But this classical approach is so easy to write.
 
