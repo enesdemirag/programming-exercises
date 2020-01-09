@@ -26,7 +26,7 @@ If you want to learn more about image kernels, you can check *[wikipedia](https:
 
 ### Practical - Image Kernels
 
-Write a function that can apply the entered kernel to an image. You can use image *[here](materials/image-processing)*.
+Write a function that can apply the entered kernel to an image. You can use image *[here](materials/image-kernels/)*.
 
 Example:
 ```
@@ -75,3 +75,7 @@ def filter(image, kernel):
     plt.imshow(result, cmap="gray") # Show filtered image
     plt.show()
 ```
+
+**Result:**
+
+<img align = center src="images/image-kernels.png">
