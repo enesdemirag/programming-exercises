@@ -20,3 +20,5 @@
 - [Markov Chains](exercises/markov-chains.md)
 
 - [Fuzzy Search](exercises/fuzzy-search.md)
+
+- [Heat Transfer](exercises/heat-transfer.md)
