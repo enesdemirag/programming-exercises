@@ -22,3 +22,5 @@
 - [Fuzzy Search](exercises/fuzzy-search.md)
 
 - [Heat Transfer](exercises/heat-transfer.md)
+
+- [Line Intersection](exercises/line-intersection.md)
