@@ -132,6 +132,8 @@ After generating 2 random float numbers between -500 and +500 as a (x,y) point i
 
 If we continue this process, 4 x ratio of darts inside the circle to total thrown darts will come out to &#960;.
 
+- C programming
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -163,5 +165,27 @@ int main()
     return 0;
 }
 ```
+
+- Python Programming
+
+```python
+def distance(x, y):
+    return ((250-x)**2 + (250-y)**2)**0.5
+    
+    while(True):
+        x, y = random.randint(0, 500), random.randint(0, 500)
+        
+        total += 1
+        if distance(x, y) < 250.5:
+            inside += 1
+
+        pi = 4.0 * inside / total
+        print(pi)
+```
+
+Simulation:
+
+<img src="images/monte-carlo.gif">
+
 
 [Here](https://editor.p5js.org/ChrisOrban/sketches/ByERjxMKG) is a great visual explanation of what we tried to do using Javascript. Also in [this video](https://thecodingtrain.com/CodingChallenges/095-approximating-pi.html) Processing (Java) used.
