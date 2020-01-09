@@ -14,9 +14,7 @@ We will use two different regression methods and write separate functions for bo
 
 |Simple Linear Regression|Least Squares Regression|
 |:---:|:---:|
-|<img src="https://web.itu.edu.tr/demirag16/img/linear-regression-formulas/simple_regression.png" width=300)>|<img src="https://web.itu.edu.tr/demirag16/img/linear-regression-formulas/least_squares.png" width=300)>|
-|<img src="https://web.itu.edu.tr/demirag16/img/linear-regression-formulas/constant.png" width=200)>|<img src="https://web.itu.edu.tr/demirag16/img/linear-regression-formulas/constant.png" width=200)>|
-|<img src="https://web.itu.edu.tr/demirag16/img/linear-regression-formulas/line.png" width=200)>|<img src="https://web.itu.edu.tr/demirag16/img/linear-regression-formulas/line.png" width=200)>|
+|<img src="images/simple-regression.png" width=300>|<img src="images/least-squares-regression.png" width= 300>|
 
 First, we generate points of ```y = x``` line with random error. Then, we will try to estimate this line using two different methods. Finally, we plot two lines respectively.  
 
@@ -65,5 +63,5 @@ plt.show()
 The result should be like this.
 
 <p align="center">
-  <img width="765" height="431" src="https://web.itu.edu.tr/demirag16/img/linear-regression.png">
+  <img src="images/regression-result.png">
 </p>
