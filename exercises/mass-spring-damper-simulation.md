@@ -77,7 +77,7 @@ def set(arg):
 Visualizer(callback=set, interval=dt * 1000, simulation_time=30, initial=(position, 0, velocity, 0, acceleration, 0))
 ```
 
-The result should be like this.
+The result should be like this. You can find the full code from [here](materials/mass-spring-damper-simulation/demo.py).
 
 <p align="center">
   <img src="images/msd-simulation.gif">

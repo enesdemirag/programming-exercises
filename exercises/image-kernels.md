@@ -79,3 +79,5 @@ def filter(image, kernel):
 **Result:**
 
 <p align="center"><img src="images/image-kernels.png"></p>
+
+_Full code is [here](materials/image-kernels/demo.py)._

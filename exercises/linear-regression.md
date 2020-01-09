@@ -60,7 +60,7 @@ ax[1].legend(["Least Squares Regression Line"])
 plt.show()
 ```
 
-The result should be like this.
+The result should be like this. Code can be accessed from [here](materials/linear-regression/regression.py).
 
 <p align="center">
   <img src="images/regression-result.png">

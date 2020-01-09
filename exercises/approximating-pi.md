@@ -184,7 +184,7 @@ def distance(x, y):
         print(pi)
 ```
 
-Simulation:
+Simulation: code is [here](materials/approximating-pi/simulation.py).
 <p align="center">
 <img src="images/monte-carlo.gif">
 </p>

@@ -66,3 +66,5 @@ def run(n, initialWordIndex):
 learn(text)
 run(100, 0)
 ```
+
+You can find the working example code from [here](materials/markov-chains/demo.py).

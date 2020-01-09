@@ -72,7 +72,7 @@ mlab.surf(z) # Surface Plot
 mlab.show()
 ```
 
-The result should be like this.
+The result should be like this. You can find the full code from [here](materials/perlin-noise/opensimplex-demo.py).
 
 <p align="center">
   <img src="images/3d-simplex.png">

@@ -9,13 +9,14 @@ To find the similarity, we need to give ranks to every file and return the one w
 ### Practical - Fuzzy Search
 
 Write a function that gets an input, and returns the most similar results in a file.
+Example movie list is [here](materials/fuzzy-search/movielist.txt).
 
 ```python
 def distance(string, pattern): # Levenshtein Distance
     string = " " + string.lower() # Make lowercase
     pattern = " " + pattern.lower() # Make lowercase
    
-    matrix = {}  Empty matrix
+    matrix = {} # Empty matrix
 
     for i in range(len(string)):
         matrix[i, 0] = i # Fill first row from 0 to length of the string
@@ -33,7 +34,7 @@ def distance(string, pattern): # Levenshtein Distance
     return matrix[len(string) - 1, len(pattern) - 1] # return the value in last element
 
 
-movies = open("movies.txt").read().split("\n") # Get the movie list
+movies = open("movielist.txt").read().split("\n") # Get the movie list
 movies_with_ranks = {} # Create empty dictionary
 
 query = str(input("Enter movie : ")) # input
@@ -51,6 +52,8 @@ for i in range(len(sorted_list)):
     if (i > 3):
         break
 ```
+
+Full code can be accessed from [here](materials/fuzzy-search/search.py).
 
 #### **References:**
 
