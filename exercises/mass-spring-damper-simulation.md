@@ -80,7 +80,7 @@ Visualizer(callback=set, interval=dt * 1000, simulation_time=30, initial=(positi
 The result should be like this.
 
 <p align="center">
-  <img src="https://web.itu.edu.tr/demirag16/img/msd-simulation.gif">
+  <img src="images/msd-simulation.gif">
 </p>
 
 _Thanks to **[@serceryazici](https://github.com/senceryazici)** for his *[Visualizer](materials/mass-spring-damper-simulation/visualizer.py)* module._
