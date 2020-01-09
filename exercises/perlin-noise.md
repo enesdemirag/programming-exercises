@@ -75,7 +75,7 @@ mlab.show()
 The result should be like this.
 
 <p align="center">
-  <img width="683" height="347" src="https://web.itu.edu.tr/demirag16/img/3D_Terrain.png">
+  <img src="images/3d-simplex.png">
 </p>
 
 
