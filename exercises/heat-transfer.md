@@ -2,7 +2,7 @@
 
 Heat transfer is a discipline of thermal engineering that concerns the generation, use, conversion, and exchange of thermal energy (heat) between physical systems.
 
-<div style="text-align:center"><img src="https://www.onlinemathlearning.com/image-files/xspecific-heat-capacity.png.pagespeed.ic.aKrNOuBNTl.webp" width="500"/></div>
+<div style="text-align:center"><img src="https://www.onlinemathlearning.com/image-files/xspecific-heat-capacity.png.pagespeed.ic.aKrNOuBNTl.webp" width="300"/></div>
 
 Ideally, given heat from one matter is equal to received heat from other. Using this approach and with the help of _**Specific Heat Capacity Formula**_ we can calculate the final (equilibrium) temperature when two different matter touch each other.
 
