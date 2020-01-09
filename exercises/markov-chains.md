@@ -5,7 +5,7 @@ A Markov Chain is a sequence of states. The idea of a sequence means, there shou
 For example, You could think of the behaviors of a baby as a Markov Chain Model, you might include **playing, eating, sleeping, and crying** as states, which together creates a **state space**, a list of all possible states. A typical sequence can be like (play --> eat --> sleep --> cry). A Markov Chain tells you the probability of transition from one state to any other state.
 
 <p align="center">
-  <img src="https://web.itu.edu.tr/demirag16/img/markov-chain.gif">
+  <img src="images/markov-chain.gif">
 </p>
 
 Marcov Chains used in a variety of fields to analyze a sequence of states and also generate or predict outcomes based on that sequence such as financial data, scientific data, weather patterns, or predicting an earthquake based on sensor readings. You can look [this great visual explanation](http://setosa.io/ev/markov-chains/) of Marcov Chains.  
