@@ -83,4 +83,4 @@ The result should be like this. You can find the full code from [here](materials
   <img src="images/msd-simulation.gif">
 </p>
 
-_Thanks to **[@serceryazici](https://github.com/senceryazici)** for his *[Visualizer](materials/mass-spring-damper-simulation/visualizer.py)* module._
+_Thanks to **[@senceryazici](https://github.com/senceryazici)** for his *[Visualizer](materials/mass-spring-damper-simulation/visualizer.py)* module._
