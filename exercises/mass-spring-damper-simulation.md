@@ -20,19 +20,18 @@ These three components, **mass, spring and damper** can model any dynamic respon
   <img src="http://bodetechnics.com/wp-content/uploads/2018/01/free_body_diagram_short_form.jpg">
 </p>
 
+![image](https://user-images.githubusercontent.com/70408681/134777322-b85ede72-14cd-4305-918f-cd5df285c997.png)
+![image](https://user-images.githubusercontent.com/70408681/134777329-561a68b0-a9b8-4865-a8d1-ad76d8e7d7b0.png)
+
 Where, **F** is the external force applied to the dynamic system. **m, b, and k** denotes the mass, damping coefficient, and spring coefficient. **x, x', and x''** denotes the displacement, velocity and acceleration vectors respectively.
 
-For more information, you can check [this website](http://www.sharetechnote.com/html/DE_Modeling_Example_SpringMass.html) and [this presentation](www.sharetechnote.com/html/DE_Modeling_Example_SpringMass.html) from Prof. R.G. Longoria, University of Texas.
+### Mass Spring Damper Simulation
 
-### Practical - Mass Spring Damper Simulation
+Creating a physics simulation of a Mass-Spring-Damper System and plot the displacement, velocity and acceleration changes.
 
-Create a physics simulation of a Mass-Spring-Damper System and plot the displacement, velocity and acceleration changes.
+For simplicity, we will use use _[matplotlib](https://matplotlib.org/)_ package to plot in order to simulate displacement, velocity and acceleration quantities. 
 
-For simplicity, we will use pre-written Python visualizer code *[here](materials/mass-spring-damper-simulation)*. It uses _[matplotlib](https://matplotlib.org/)_ package to plot In order to simulate displacement, velocity and acceleration quantities. In order to this first we need to save visualizer.py file and import that to our python code.
-
-Visualizer object takes a **callback function** which is basically returns new 2D position value each time it is called, a **time interval** which represents sampling period for this continuous system in milliseconds, **simulation_time** for plotting range, and **initial position** of the mass in 2D cartesian coordinate system. Although this Visualizer prepared for plotting 2D simulations, our system will move in only 1D, so we'll change x values only and make y values constant.
-
-All we need to do is implementing **Force = mass * acceleration + b * velocity + k * position** equation. In this system lets assume external force is zero and initial position is 15.
+All we need to do is implementing **Force = mass * acceleration + b * velocity + k * position** equation. In this system lets assume external force is zero and initial position is to be entered as input.
 
 <p align="center">
   <img src="https://cdn.kastatic.org/ka-perseus-images/6a38c2127e4ea04fadf58c016b81d19a4a46d5c0.gif">
@@ -49,14 +48,14 @@ from visualizer import Visualizer # Import Visualizer class
 dt = 0.05 # ΔT (sampling period) seconds
 
 # Initial values
-position = 15
+position = Inputvalue
 velocity = 0
 acceleration = 0
 
 # Constants
-mass = 1 # mass
-k = 2.5 # spring coefficient
-b = 0.3 # damping coefficient
+mass = 4.2 # mass
+k = 2.1 # spring coefficient
+b = 0.5 # damping coefficient
 
 # Callback Function
 def set(arg):
@@ -83,4 +82,5 @@ The result should be like this. You can find the full code from [here](materials
   <img src="images/msd-simulation.gif">
 </p>
 
-_Thanks to **[@senceryazici](https://github.com/senceryazici)** for his *[Visualizer](materials/mass-spring-damper-simulation/visualizer.py)* module._
+References used (for illustrations): 
+1. http://www.sharetechnote.com/html/DE_Modeling_Example_SpringMass.html#SingleSpring_SimpleHarmonic_Vert_Damp 
